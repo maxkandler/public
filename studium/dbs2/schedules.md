@@ -45,7 +45,7 @@ Ein Schedule gilt als legal, wenn
 
 ## Sperrprotokolle
 
-## 2PL – 2-Phasen-Sperrprotokol
+### 2PL – 2-Phasen-Sperrprotokol
 
 * Jede TA durchläuft 2 Phasen: 
 	* Wachstumsphase (LOCK)
@@ -134,7 +134,7 @@ X 	| -	| -	| -	|
 | C	| +	| -	| -	|
 
 
-## Konsistenzstufen
+### Konsistenzstufen
 
 *nach J. Gray*
 
@@ -159,3 +159,68 @@ Zusätzlich **Cursor Stability**
 : Modifikation von Stufe 2; Lesesperren bleiben bis Cursor zum nächsten Objekt übergeht
 
 
+## Deadlocks
+
+Strategien zur Vermeidung und Auflösung von "Verklemmungen".
+
+### Preclaiming
+
+* Alle Sperrenanforderungen werden zu Beginn einer TA gestellt
+
+### Ordnung
+
+* Alle Datenbank-Objekte haben eine totale Ordnung
+* Sperren werden nur in aufsteigender Reihenfolge vergeben
+
+### Zeistempel
+
+* Jede Transaktion bekommt einen Zeitstempel (i.d.R. die erste Datenbankoperation)
+
+#### wound – wait 
+
+`T_i` fordert Sperre an.
+
+* Jüngere TA hat Sperre auf X 
+	* ⇒ `T_i` läuft weiter, jüngere wird zurückgesetzt (**wound**)
+* Ältere TA hat Sperre auf X
+	* ⇒ `T_i` wartet auf Freigabe der Sperre (**wait**)
+
+#### wait – die
+
+`T_i` fordert Sperre an.
+
+* Jüngere TA hat Sperre auf X
+	* ⇒ `T_i` wartet auf Freigabe der Sperre (**wait**)
+* Ältere TA hat Sperre auf X
+	* ⇒ Ältere TA darf weiterlaufen, `T_i` wird zurückgesetzt (**die**)
+
+## Synchronisation ohne Sperren
+
+* Objekte haben Zeitstempel
+	* `readTS(o)` – Zeitstempel der jüngsten TA, die `o` gelesen hat
+	* `writeTS(o)` – Zeitstempel der jüngsten TA, die `o` geschrieben hat
+* Prüfung bei Lesezugriff von TA `T` auf `o`
+	* jüngere TA hat `o` geschrieben ⇒ `T` zurücksetzen
+	* sonst: `T` darf `o` lesen, Lesemarke aktualisieren `readTS(o) = max(TS(T), readTS(o))`
+* Prüfung bei Schreibzugriff von TA `T` auf `o`
+	* jüngere TA hat `o` gelesen oder geschrieben ⇒ `T` zurücksetzen
+	* sonst: `T` darf `o` schreiben, Schreibmarke wird aktualisiert `writeTS(o) = TS(T)`
+
+## Optimistische Synchronisation
+
+* Konflikte werden erst bei `COMMIT` festgestellt und dann TAs zurückgesetzt
+* `RS(T)` – von `T` gelesene Objekte *(Read Set)*
+* `WR(T)` – von `T` geschriebene Objekte *(Write Set)* enthält auf `RS(T)`
+
+### BOCC (Backward-Oriented Optimistic Concurrency Control)
+
+* Validierung nur gegenüber TAs, die während der Ausführung von `T` beendet wurden
+* Prüfung bei EOT von `T`: `RS(T)` wird mit `WS(T_j)` verglichen. Konflikt falls Schnittmenge ⇒ `T` zurücksetzen
+* Problem: Rücksetzen kann ohne tatsächlichen Konflikt passieren
+* Lösung: **BOCC+** Objekte bekommen Versionsnummern
+
+### FOCC (Forward-Oriented Optimistic Concurrency Control)
+
+* Validierung nur gegenüber noch laufenden TAs
+* Prüfung bei EOT von `T`: `WS(T)` wird mit `RS(T_j)` verglichen. Konflikt falls Schnittmenge ⇒ eine der betroffenen TAs zurücksetzen
+* Vorteil: nur echte Konflikte
