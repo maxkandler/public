@@ -69,7 +69,7 @@ Ein Schedule gilt als legal, wenn
 * **kein Verhungern möglich**
 
 | 	| R 	| U	| X	|
--	| ---	| ---	| --	|
+| :---	| :---	| :---	| :--	|
  R	| +	| -	| -	|
  U	| +	| -	| -	|
  X	| -	| -	| -	|
@@ -82,7 +82,7 @@ Ein Schedule gilt als legal, wenn
 * Tradeoff zwischen Parallelität und Verhungern
 
 | 	| R 	| A	| X	|
-|-	|---	|--	|--	|
+| :---	| :---	| :--	| :--	|
 R 	| +	| +	| -	|
 A 	| +	| -	| -	|
 X 	| -	| -	| -	|
@@ -104,12 +104,11 @@ X 	| -	| -	| -	|
 : volle R-Sperre + feinere X-Sperre
 
 | 	| R	| X	| IR	| IX	| RIX	|
-|--	|--	|---	|---	|----	| ---   |
+| :--	| :--	| :---	| :---	| :----	| :--- 	|
 |R	| +	| -	| +	| -	| -	|
 |X 	| -	| -	| -	| -	| -	|
 |IR 	| +	| -	| +	| ×	| ×	|
 |IX	| -	| -	| ×	| ×	| -	|
 |RIX	| -	| -	| ×	| -	| -	|
-
 [× zusätzliche Überprüfung auf feinerer Eben notwendig]
 
