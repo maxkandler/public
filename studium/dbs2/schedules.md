@@ -134,3 +134,28 @@ X 	| -	| -	| -	|
 | C	| +	| -	| -	|
 
 
+## Konsistenzstufen
+
+*nach J. Gray*
+
+* Definition über Dauer der Sperren
+	* lange = Sperre wird bis EOT gehalten
+	* kurz = Sperre wird nicht bis EOT gehalten
+
+| 	| Schreibsperre	| Lesesperre	| Dirty Read 	| Lost Update	| Non-Repeatable Read 	|
+| :--	| :--------------	| :-----------	| :----------- 	| :-----------	| :----------- 	|
+| Konsistenzstufe 0	| kurz	| keine	| ja	| ja 	| ja 	|
+| Konsistenzstufe 1	| lang	| keine	| ja	| nein	| ja	|
+| Konsistenzstufe 2	| lang	| kurz	| nein	| ja	| ja	|
+| Konsistenzstufe 3	| lang	| lang	| nein 	| nein	| nein	|
+
+
+
+
+**Konsistenzstufe 3**
+: entspricht strengem 2PL, Serialisierbarkeit gewährleistet; kein Non-Repeatab
+
+Zusätzlich **Cursor Stability**
+: Modifikation von Stufe 2; Lesesperren bleiben bis Cursor zum nächsten Objekt übergeht
+
+
