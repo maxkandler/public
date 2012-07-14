@@ -105,10 +105,32 @@ X 	| -	| -	| -	|
 
 | 	| R	| X	| IR	| IX	| RIX	|
 | :--	| :--	| :---	| :---	| :----	| :--- 	|
-|R	| +	| -	| +	| -	| -	|
-|X 	| -	| -	| -	| -	| -	|
-|IR 	| +	| -	| +	| ×	| ×	|
-|IX	| -	| -	| ×	| ×	| -	|
-|RIX	| -	| -	| ×	| -	| -	|
+| R	| +	| -	| +	| -	| -	|
+| X 	| -	| -	| -	| -	| -	|
+| IR 	| +	| -	| +	| ×	| ×	|
+| IX	| -	| -	| ×	| ×	| -	|
+| RIX	| -	| -	| ×	| -	| -	|
 [× zusätzliche Überprüfung auf feinerer Eben notwendig]
+
+### RAC Sperrprotokoll (Mehrversionen-Sperre)
+
+**Prinzip:**
+
+* **A-Sperre** um an lokalen Kopien Änderungen vorzunehmen
+* **C-Sperre** zeigt an, dass es zwei Versionen gibt
+* Bei `COMMIT` A → C
+* C-Sperre wird erst freigegeben, wenn letzter alter Leser fertig ist
+
+**Eigenschaften:**
+
+* Leseanforderungen nie blockiert
+* Schreiber müssen bei C-SPerre auf alle Leser der alten Version warten
+* Hoher Aufwand für Datensicherheit (Integrität) und Serialisierung
+
+| 	| R	| A	| C	|
+| :--	| :--	| :--	| :--	|
+| R	| +	| +	| +	|
+| A	| +	| -	| -	|
+| C	| +	| -	| -	|
+
 
