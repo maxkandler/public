@@ -104,11 +104,12 @@ X 	| -	| -	| -	|
 : volle R-Sperre + feinere X-Sperre
 
 | 	| R	| X	| IR	| IX	| RIX	|
-|--	|--	|---	|---	|----	|
+|--	|--	|---	|---	|----	| ---   |
 |R	| +	| -	| +	| -	| -	|
 |X 	| -	| -	| -	| -	| -	|
 |IR 	| +	| -	| +	| ×	| ×	|
 |IX	| -	| -	| ×	| ×	| -	|
 |RIX	| -	| -	| ×	| -	| -	|
+
 [× zusätzliche Überprüfung auf feinerer Eben notwendig]
 
