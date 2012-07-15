@@ -23,6 +23,11 @@ http://www.dbs.ifi.lmu.de/cms/Datenbanksysteme_II_12
   * [Synchronisation ohne Sperren](https://github.com/mkleucker/public/blob/master/studium/dbs2/schedules.md#synchronisation-ohne-sperren)
   * [Optimistische Synchronisation](https://github.com/mkleucker/public/blob/master/studium/dbs2/schedules.md#optimistische-synchronisation)
 
+* [Recovery](https://github.com/mkleucker/public/blob/master/studium/dbs2/recovery.md#recovery)
+  * [Typsisierung & Behandlung](https://github.com/mkleucker/public/blob/master/studium/dbs2/recovery.md#typisierung--behandlung)
+  * [Sicherungspunkte](https://github.com/mkleucker/public/blob/master/studium/dbs2/recovery.md#sicherungspunkte)
+  * [Crash Recovery](https://github.com/mkleucker/public/blob/master/studium/dbs2/recovery.md#sicherungspunkte)
+
 * [Logging](https://github.com/mkleucker/public/blob/master/studium/dbs2/logging.md#logging)
   * [Klassifikation](https://github.com/mkleucker/public/blob/master/studium/dbs2/logging.md#klassifikation)
   * [Log-Einträge](https://github.com/mkleucker/public/blob/master/studium/dbs2/logging.md#log-eintr%C3%A4ge)
