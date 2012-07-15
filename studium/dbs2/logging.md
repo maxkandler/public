@@ -1,5 +1,5 @@
 # Logging
-
+****
 Aufgabe
 : Alle Änderungsoperationen in der DB in einem Protokoll zusammenfassen
 
