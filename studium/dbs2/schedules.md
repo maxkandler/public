@@ -210,7 +210,7 @@ Strategien zur Vermeidung und Auflösung von "Verklemmungen".
 
 * Konflikte werden erst bei `COMMIT` festgestellt und dann TAs zurückgesetzt
 * `RS(T)` – von `T` gelesene Objekte *(Read Set)*
-* `WR(T)` – von `T` geschriebene Objekte *(Write Set)* enthält auf `RS(T)`
+* `WR(T)` – von `T` geschriebene Objekte *(Write Set)* ist Teilmenge von `RS(T)`
 
 ### BOCC (Backward-Oriented Optimistic Concurrency Control)
 
