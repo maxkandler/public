@@ -81,3 +81,56 @@ PrevLSN
 : Loggt Aktionen im Zuge von `UNDO`
 
 
+## Einbringstrategien & Pufferverwaltung
+
+### Einbringstrategien
+
+Wie werden die (veränderten) Daten wieder in die Datenbank geschrieben?
+
+**Direktes Einbringen** (Update-In-Place, Non-Atomic)
+
+* geänderte Seiten überschreiben immer die alte Version
+* Ausschreiben der Seite = Einbringen in die Datenbank (kein Zwischenspeicher)
+* gängigste Methode
+
+**Indirektes Einbringen** (Atomar)
+
+* geänderte Seite wird in separatem Block geschrieben (Twin-Block-Verfahren, Schattenspeichertechnik)
+* atomares Einbringen mehrerer Seiten möglich
+
+### Pufferverwaltung
+
+#### Verdrängungsstrategien
+
+* **Steal** Seiten dürfen jederzeit im Puffer ersetzt und in die DB eingebracht werden
+* ⇒ DB kann unbestätigte Änderungen enthalten ⇒ UNDO nötig
+* **No-Steal** Seiten dürfen frühestens bei `EOT` in DB aus Puffer entfernt und in DB geschrieben werden
+* ⇒ DB enthält nur Änderungen erfolgreicher TAs ⇒ UNDO nicht nötig
+
+#### Ausschreibestrategien (EOT-Behandlung)
+
+* **Force** geänderte Seiten spätestens bei `EOT` in DB schreiben 
+* ⇒ REDO nicht nötig
+* **No-Force** geänderte Seiten können auch erst nach EOT in die DB geschrieben werden
+* ⇒ Änderungen erfolgreicher TAs evtl. nicht in DB ⇒ REDO nötig
+
+> **PRAXIS:** STEAL/NO-FORCE
+
+## WAL & COMMIT
+
+**WAL-Prinzip** (Write-Ahead-Log)
+
+* UNDO-Informationen müssen vor Änderung in der DB im Log stehen
+* Nur relevant bei STEAL
+* Wichtig bei direktem Einbringen
+
+**COMMIT-Regel** (Force-Log-At-Commit)
+
+* REDO-Informationen muss vor COMMIT im Log stehen
+* Vorraussetzung für Geräte-Recover und Crash-Recovery (~ bei No-Force)
+
+
+
+
+
+
