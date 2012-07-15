@@ -124,7 +124,7 @@ X 	| -	| -	| -	|
 **Eigenschaften:**
 
 * Leseanforderungen nie blockiert
-* Schreiber müssen bei C-SPerre auf alle Leser der alten Version warten
+* Schreiber müssen bei C-Sperre auf alle Leser der alten Version warten
 * Hoher Aufwand für Datensicherheit (Integrität) und Serialisierung
 
 | 	| R	| A	| C	|
