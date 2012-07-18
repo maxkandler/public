@@ -3,6 +3,14 @@
 Schedule
 :	Folge von Aktionen einer Menge von Transaktionen
 
+## Konfliktäquivalenz
+
+Zwie Schedules sind konlfiktäquivalent, wenn gilt
+
+* `S1` und `S2` besitzen die gleichen Operationsmengen (Transaktions- und Aktionsmengen)
+* `S1` und `S2`besitzend ie gleichen Abhängigkeitsmengen
+
+
 ## Serialisierbare Schedules 
 
 Es gilt,
