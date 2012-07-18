@@ -76,6 +76,53 @@ Selektivität
 	* **Histogramm**: Wertebereich in Intervalle unterteilen und zählen
 	* **Stichproben**: `n` Tupel aus einer Relation repräsentativ betrachten
 
+## Implementierung der Joinoperation
+
+### Nested-Loop-Join
+
+* einfachste Variante: Bildung des kartesischen Produkts mit anschließender Selektion
+* miserable Performance
+* `R` ist äußere Relation, `S` ist innere Relation
+
+		for each Tupel r ∈ R do
+			for each Tupel s ∈ S do
+				if r.A = s.B then
+					result := result ∪ (r×s)
+
+
+### Nested-Block-Loop-Join
+
+* Tupel werden blockweise geladen 
+
+
+		for each Block B_R ∈ R do
+			load B_R
+			for each Block B_S ∈ S do
+				load B_S
+				for each Tupel r ∈ B_R do
+					for each Tupel s ∈ B_S do
+						if r.A = s.B then
+							result := result ∪ (r×s)
+
+#### Optimierung
+
+**Anzahl Blockzugriffe:**
+
+		B_R + B_S * B_R = Anzahl Blockzugriffe
+
+##### Caching
+
+* Caching Strategien, um die Anzahl der Blockzugriffe niedrig zu halten
+
+1. Seiten der inneren Relation im Cache halten
+2. Seiten der inneren Relation im Catche, aber innere Relation jedes zweite Mal rückwärts
+3. \|C|-1 Blöcke der äußeren Relation im Cache. Join mit jedem Block der inneren Relation
+
+
+
+
+
+
 
 
 
