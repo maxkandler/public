@@ -75,8 +75,77 @@
 * "Terioriality on tables"
 * "Orientation on tables"
 * "Fat Finger Problem"
+* Occlusion Problem
 
 ### Hard- and Software for Interactive Surfaces ###
+
+* Output: Displays
+	* Front Projection
+	* Back Projection
+	* Projection from the side
+	* Screens
+* Input: Sensing
+	* Touch Screens
+		* Capacitive Sensing 
+	* Optical Sensing (Infrared)
+		* FTIR
+		* DI
+	* Optical Tracking from the side
+* Examples and Software
+
+### Interaction Techniques on Interactive Surfaces ###
+
+* Single Touch
+	* How to implement Actions?
+* 2-Point Touch
+	* Gestures
+* > 2-Point Touch
+* Shape-based interaction
+	* Proxy-Objects
+
+### Haptic Output on Interactive Surfaces ###
+
+	Haptic: everything relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch. (Oxford Dictionary, 2012)
+
+#### Four Technical Approaches ####
+
+**Actuating the screen' surface or encasing of device**
+
+* Example: Vibrations
+* Advantages:	simple feedback, simple implementation
+* Disadvantages: reduced expressiveness, not scalable to larger devices, ambiguity (no differentiations)
+
+**Actuating 'Tactile Pixels'**
+
+* Example: Shape Displays (Display elevates or pretends to)
+* Advantages: rich tactile stimuli, multi-tactile feedback
+* Disadvantages: reduced tactile resolution, limited flexibility, complex technology, limited scalability
+
+**Actuating additional devices**
+
+* Example: Additional devices (pens, cubes, etc.)
+* Advantages: rich tactile stimuli, several tactile modalities, freedom of design of interactive surface, scalability, new input modalities
+* Disadvantages: occlusion, additional device needed, no direct manipulation, no gestural input, problems with multi-tactile feedback 
+
+**Remote tactile feedback**
+
+* Example: Actuators in the user's environment (wearable, embedded)
+* Advantages: simplification of implementation, arbitrary form and size, direct touch, multi-haptics
+* Disadvantages: constant contact with actuators, neural integration needs training, depend from body surface
+
+**State Of Art**
+
+* miniaturization of actuator
+* progress in physiology
+* continuing prevalence of touch interfaces
+
+### Nonplanar Surfaces ###
+
+* Examples: Curve, BendDesk
+
+### Flexible and Deformable Surfaces ###
+
+
 
 
 
