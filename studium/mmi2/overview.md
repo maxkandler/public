@@ -1,6 +1,6 @@
 # Human-Computer-Interaction II #
 
-	*Lecture at the LMU Munich during the winter term 2012/2013. A summary of the lecture based on the script provided by Prof. Dr. Andreas Butz. No guarantee for completeness and correctness. Only created for personal learning purposes.*
+> *Lecture at the LMU Munich during the winter term 2012/2013. A summary of the lecture based on the script provided by Prof. Dr. Andreas Butz. No guarantee for completeness and correctness. Only created for personal learning purposes.*
 
 ## HCI an the Web ##
 
@@ -105,7 +105,8 @@
 
 ### Haptic Output on Interactive Surfaces ###
 
-	Haptic: everything relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch. (Oxford Dictionary, 2012)
+> Haptic: everything relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch. (Oxford Dictionary, 2012)
+
 
 #### Four Technical Approaches ####
 
