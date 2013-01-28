@@ -134,7 +134,7 @@
 * Advantages: simplification of implementation, arbitrary form and size, direct touch, multi-haptics
 * Disadvantages: constant contact with actuators, neural integration needs training, depend from body surface
 
-**State Of Art**
+**State Of Affairs**
 
 * miniaturization of actuator
 * progress in physiology
@@ -147,7 +147,76 @@
 ### Flexible and Deformable Surfaces ###
 
 
+## Mobile Interaction ##
 
+### State of Affairs ###
 
+* Attention crisis
+* swiss knife syndrome
+* cultural and environmental impact
+* History
 
+**Current Platforms**
 
+* iOS vs Android
+
+### Mobile Interaction ###
+
+#### Properties of Mobile Interaction ####
+
+* Interruptions
+* Changing Environments
+* No full concentration
+* social situations
+
+* Output: Speakers, Display, vibration, projectors
+* Input: Multitouch, Sensors, Cameras
+
+#### Mobile Input ####
+
+* Different Keyboard Layouts and Concepts
+* Gestures
+* Precision for Touch Input
+* Speech (Speech Recognition)
+* Pressure-Sensitive Two-Sided Multitouch Interaction
+
+#### Mobile Output ####
+
+* Screen Layout
+	* Overview + Detail (-> InfoVis)
+	* "The Wedge"
+* Flexible Displays
+* Displays with attached projectors
+* (Pico) Projectors 
+* Speech (Text-To-Speech)
+
+#### Moar Interactions for Mobile ####
+
+**Camera-based Interaction**
+
+* Map & Physical Interaction
+* QR-Codes
+
+**Sensor-based Interaction**
+
+* Accelerometer
+* Magnetometer
+* Light
+* Temperature
+* ...
+* *Important* Data Filtering, Mapping Gestures to Meaning
+
+**Handheld Augmented Reality**
+
+* Annotation of Real World
+
+**Location and Context**
+
+* Location-based reminders
+* User Context => Context-aware Computing
+
+**Interaction between mobile and other screens**
+
+* "Pick-and-Drop"
+* augmented Surfaces
+* Touch Projectors
