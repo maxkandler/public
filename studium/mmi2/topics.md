@@ -2,7 +2,7 @@
 
 *A more detailed summarization of the lecture **Human Computer Interaction 2**. Held by Prof. Andreas Butz at the LMU Munich in 2012/13. Material not relevant for the test already excluded.*
 
-## Usability ##
+## Usability & the Web ##
 
 > ... the effectiveness, effiency and statisfaction with which a specified set of users can achieve a specified set of tasks.
 
@@ -168,4 +168,56 @@
 
 **Annoying or inaccessible page design**
 
-*
+* Splah screens
+* unlegible text 
+* ...
+
+**Search Engine Problems**
+
+* Pages not linking to other pages (dead end)
+* Pages without proper title
+* Removed pages
+
+**Information Architecture Problems**
+
+* Pages with different layouts and appearance for the same information
+* To long pages
+* Unknown icons
+* Inconsistency regarding the navigation
+* ...
+
+**E-Commerce problems**
+
+* Aborting checkout because of registration, ...
+* Information not directly available (shipping rates)
+
+#### Web Accessibility ####
+
+**Disabilities affecting the web usage**
+
+* Vision
+* Hearing
+* Physical abilities
+* Cognitive abilities
+
+**Myths about accessibility on the web**
+
+* accessible = plain (colors may help)
+* accessible = text-only version (should be understandable with text-only though)
+
+**Assistive Technology: Screen Reader**
+
+* Listen to text
+* How to browse / interact with the site
+* Distracting content becomes obvious
+* => use alt-Tags so the content of the image becomes available
+* => subtitles for videos
+* => font-resizing
+
+**Regulatory Situation**
+
+* USA: Section 508
+* EU: ~ WAI
+* DE: BITV
+* International: WAI (w3c), especially WCAG 2.0
+
