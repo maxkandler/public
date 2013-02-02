@@ -306,5 +306,101 @@ Example: Rotating and Translating elements
 * Shape-based interaction
 	* emulate the object digitally with proper attributes
 
- 
 
+
+## Mobile Interaction ##
+
+### State of Affairs ###
+
+* **Attention Crisis**
+* **Swiss Army Knife**
+	* All-purpose devices can do everything but not particularly well
+	* Often we settle for suboptimal tools
+* **Environmental Impact**
+	* Mobile phones contain chemical elements 
+	* Disposable technology paradigm: Short-Update-Cycle, throw the old device away
+	* Sustainable mobile phone design (3310! ftw!)
+* **Cultural Impact**
+	* Reading books on mobile phones 
+
+### Mobile Interaction ###
+
+#### Properties of Mobile Interaction ####
+
+* **Interruptions**
+	* From the environment
+	* From the device itself (incoming messages, calls)
+* **Changing Environments**
+	* Noise, Light Conditions
+* **Full Concentration impossible**
+	* Cognitive capacity shared with other tasks
+* **Presence of others, social situations**
+	* Incoming calls change social situation
+* **Importance of events in the environment**
+	* Environment provides relevant information
+	* Action in the environment based on combination
+* **Usage in Context**
+	* Primary real-world task
+
+#### Output & Input Technologies ####
+
+**Output Devices**
+
+* LCD Screens
+* Loudspeakers (headphones)
+* Vibrotactile motors
+* Handheld projectors
+
+**Sensors**
+
+* Multitouch Displays
+* Low-power Sensors (Microphone, accelerometer, compass, ...)
+* CCD cameras
+
+#### Mobile Input ####
+
+**Design Space of Input Devices**
+
+* Interaction techniques combine input with feedback
+* Input Devices enable Human-Computer dailogues
+
+**Properties of Input Devices**
+
+* Property sensed (what is sensed and on what scale)
+* Number of Dimensions
+* Direct (Input Space = Output Space) vs Indirect
+* Device acquisition time
+* Control-to-Display (C:D) ratio (speed vs. accuracy)
+* Issues: clutching, lag, update rate
+
+**Match Input Device to Task**
+
+* Expressiveness (Matching Meaning of input)
+* Effectiveness
+
+**Text Input**
+
+* Goal: High-speed entry at low arror rates
+* Keyboards: Different layouts (DVORAK, Phones) – different challenges (Ambiguity)
+* Handwriting: Simplified (Unistroke)
+* Swype
+
+**Mobile (multi) Touch**
+
+* Touch gestures
+	* parameters: Velocity, shape, direction, number of touch points
+	* Letter & digit recognizer
+	* User-customizable Gestures
+* gesture recognition
+	* $1 Recognizer
+	* Input can widely vary  
+* tapsticks
+* microrolls
+
+**Visualization on small screens**
+
+* Scrolling / Paning
+* Switching between Screens
+* Overview + Detail
+* Focus + Context
+* 
