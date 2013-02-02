@@ -292,5 +292,19 @@
 
 * Cameras from different angles determine touch point
 
+## Interaction on Interactive Surfaces ##
 
+### Interaction Techniques ###
+
+Variations based on the number of touch points:
+
+Example: Rotating and Translating elements 
+
+* 1 Touch-Point (difficult for gestures, must "guess" a second point)
+* 2 Touch Points (direct gestures)
+* > 2 Touch Points (only work with two points)
+* Shape-based interaction
+	* emulate the object digitally with proper attributes
+
+ 
 
