@@ -221,3 +221,76 @@
 * DE: BITV
 * International: WAI (w3c), especially WCAG 2.0
 
+
+
+## Interactive Surfaces ##
+
+**History**
+
+* Since 1990s research and studies
+* Since 2000s prototypes and final products
+
+### Problems and Particularities for Interactive Surfaces ###
+
+**Asymmetric Bimanual Interaction**
+
+* left-handed vs. right-handed
+
+**Territoriality on tables**
+
+*excluded for the exam*
+
+**Direction and orientation on tables**
+
+*excluded for the exam*
+
+**Middas Touch Problem**
+
+*Historic: King Midas who turned everything to gold as he touch it. Also food and the other good things in life.*
+
+* General Problem with touch input:
+	* Positioning and selection is the same
+	* no 'hover' state
+* Easy solution: dwell time
+	* Function is triggered after a certain amount of time
+	* disturbs flow as it introduces artifical delays
+* Other solutions:
+	* Lift-Off Techniques: Cursor is offset from finger and function is triggered when the finger lifts
+	* Pressure Sensing: Hover is default status and function triggers on pressing harder
+
+**Occlusion and Fat Finger Problem**
+
+* Fingers and hands occlude screen objects
+* Finger may hit small objects
+* Exact hit-point is occluded
+
+### Hard- and Software for Interactive Surfaces ###
+
+#### Output: Displays ####
+
+* **Front Projection**
+* **Rear Projection**
+* **Projection from the side**
+* **Screens** Tabletops
+
+#### Input: Sensing ####
+
+**Embedded Sensors**
+
+* **Classical Touch Screen**
+* **Capacitive Sensing** 
+	* Finger changes charge of conductive material
+	* Most used (smartphones!)
+* **Resistive**
+* **Optical**
+
+**Camera Infrared**
+
+* **FTIR** Frustrated Internal Reflection
+
+**Cameras**
+
+* Cameras from different angles determine touch point
+
+
+
