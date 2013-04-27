@@ -60,4 +60,14 @@ Ergebnismerkmal ist nominal (kategorisch).
 Regeln in einer Datenbank finden. So dass gilt, wenn x,y,z zutreffen, dann auch w mit einer Wahrscheinlichkeit > v.
 
 
+### Recap: Datentypen in der Statistik
+
+Nominal
+: Qualitative Ausprägung, ohne natürliche Ordnung. *Beispiel:* Geschlecht, Beruf, ja/nein
+
+Ordinal
+: Qualitative Ausprägung mir natürlicher Ordnung. *Beispiel:* gut – schlecht
+
+Metrisch
+: "absolute" Merkmalsausprägung, die aus einer Zahl besteht und eine Dimension (= Einheit) hat. *Beispiel:* Alter, Größe
 
